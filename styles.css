@@ -1,0 +1,114 @@
+body {
+    background-color: gray;
+}
+
+#lobby {
+    display: grid;
+    grid-template: 300px 1fr / 1fr 1fr 1fr;
+}
+#todos {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    padding: 5px 5px;
+    border: solid black 5px;
+}
+
+#todos img {
+    height: 75px;
+    width: 128.3px;
+    border: rgb(75, 74, 74) solid 3px;
+}
+
+#todos img:hover {
+    border: rgb(182, 180, 180) ridge 3px;
+    cursor: pointer;
+}
+
+#todos img:active {
+    border: rgb(0, 204, 255) ridge 3px;
+    cursor: pointer;
+}
+
+#aleatorio {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: none;
+}
+#escolher{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+#partida{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+button {
+    height: 75px;
+    width: 128.3px;
+    justify-self: center;
+    align-self: flex-start;
+    text-align: center;
+    font-size: 2.5vh;
+    position: sticky;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(0, 0, 41);
+    background-color: rgb(53, 51, 51);
+    border: ridge white 0.5vh;
+    padding: 5px 5px;
+}
+button:hover {
+    cursor: pointer;
+    border: ridge rgb(133, 132, 68) 0.5vh;
+}
+button:active {
+    border: ridge rgb(20, 141, 141) 0.5vh;
+}
+#confrontoAtual {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#confrontoAtual img {
+    height: 75px;
+    width: 128.3px;
+}
+
+.oponente1,
+.oponente2 {
+    opacity: 50%;
+}
+
+#ger {
+    justify-self: center;
+    align-self: flex-end;
+    text-align: center;
+    font-size: 2.5vh;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(0, 0, 41);
+    position: absolute;
+    top: -100px;
+    background-color: rgb(53, 51, 51);
+    border: ridge white 0.5vh;
+    padding: 5px 5px;
+}
+
+#resultado{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(0, 0, 41);
+    padding: 5px 5px;
+}
